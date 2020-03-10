@@ -1,0 +1,12 @@
+<progress
+  #progress
+  [max]="videoInfo"
+  [value]="timeProgress"
+  style="width: 100%; display: block;"
+></progress>
+
+<div>
+  {{ currentTime.minutes }}:{{ currentTime.seconds }}/{{ duration.minutes }}:{{
+    duration.seconds
+  }}
+</div>

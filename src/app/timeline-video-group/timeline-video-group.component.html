@@ -1,0 +1,11 @@
+<app-video
+  (progress)="progressChange($event)"
+  (videoInfo)="getVideoProperities($event)"
+></app-video>
+
+<app-timeline
+  [timeProgress]="progressTime"
+  [videoInfo]="videoInformation"
+></app-timeline>
+
+<div *ngFor="let timePoint of timeLinePoints">{{ timePoint | json }}</div>
